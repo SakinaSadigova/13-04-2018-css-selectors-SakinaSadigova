@@ -38,7 +38,7 @@
         
     }*/
 @keyframes walk-around-body {
-    0% {
+    /*0% {
         top: 0px;
         left: 0px;
     }
@@ -61,24 +61,41 @@
         left: 0px;
         top: 0px;
 
-    }
+    }*/
 
-    /*from {
-        top: 0px;
-        left: 0px;
+    from {
+        transform: rotate(0deg)
     }
     to {
-        top: 0px;
-        left: calc(100% - 75px);
-    }*/
+        transform: rotate(360deg)
+    }
     }
 .walk {
-    width: 75px;
-    height: 75px;
-    background: red;
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    /*transition: all .5s linear;*/
+    animation: walk-around-body 5s infinite linear;
+}
+.earth {
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
-    /*transition: all .5s linear;*/
-    animation: walk-around-body 5s infinite linear;
+}
+.sun {
+    width: 100px;
+    height:100px;
+    background: orange;
+    border-radius: 100%;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
 }
