@@ -1,57 +1,125 @@
 ﻿<!DOCTYPE html>
-
 <html>
-    <head>
-        <title>CSS Selector</title>
-        <link href="css/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!--<div class="main">
-        <ul>
-            <li>1.Link</li>
-            <li>2.Link</li>
-            <li>3.Link</li>
-            <li>4.Link</li>
-            <li>5.Link</li>
-            <li>6.Link</li>
-            <li>7.Link</li>
-            <li>8.Link</li>
-            <li>9.Link</li>
-            <li>10.Link</li>
-            <li>11.Link</li>
-            <li>12.Link</li>
-            <li>13.Link</li>
-            <li>14.Link</li>
-            <li>15.Link</li>
-            <li>16.Link</li>
-        </ul>
-    </div>-->
-        <div class="register-form">
-            <form action="https://www.w3schools.com/cssref/trysel.asp" method="post">
-                <input type="text" name="your-name" placeholder="Adiniz" />
-                <input type="text" name="your-surname" placeholder="Soyadiniz" />
-                <input type="password" name="your-password" placeholder="Parolunuz" />
-                <input type="number" name="your-age" placeholder="Yasiniz" />
-                <input type="button" name="send-button" value="Send" />
-                <input type="submit" name="submit-button" value="Submit" />
-                <input type="reset" name="reset-button" value="Reset Data" />
-                <!--<select>
-                <option value="value">text</option>
-                <option value="value">text</option>
-                <option value="value">text</option>
-                <option value="value">text</option>
+<head>
+    <title>Reativity</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
 
-            </select>
-            <input type="checkbox" name="name" value=""  checked/>
-            <input type="radio" name="name" value="" />
-            <textarea name="your-message" rows="30" cols="30"></textarea>-->
-            </form>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header which one contains navigation bar -->
+    <header>
+        <div class="normal">
+            <!-- The logo of the company -->
+            <div class="logo floatLeft">
+                <img src="images/logo.png" alt="">
+            </div>
+              <!-- Get a quote button -->
+                <a href="#" class="floatRight buttonView">GET A QUOTE</a>
+          
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <ul>
+                    <li class="selected"><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">our work</a></li>
+                    <li><a href="#">news <i class=" i fas fa-angle-down"></i></a></li>
+                    <li><a href="#">contacts</a></li>
+                    <li><a href="#">pages <i class=" i fas fa-angle-down"></i></a></li>
+                </ul>
+            </div>
+          
         </div>
-        <p>1</p>
-        <p></p>
-        <p>3</p>
-        <p>4</p>
-        <p></p>
-        <p>6</p>
-    </body>
+    </header>
+
+    <!-- Main slider section -->
+    <section id="slider" class="clear">
+         <div class="sliderTitle">
+            <h1>Advertising in Print</h1>
+            <div>
+                <span class="line"></span>
+                 <h4>We'll help you get your message to your clients by placing advertising in the best print magazines and newspapers of the country!</h4>
+            </div>
+         </div>
+         <div class="swiper">
+            <div class="swiperNav">
+                 <div class="prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="next"><i class="fas fa-chevron-right"></i></div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Experience section -->
+    <section id="experience"  class="clear">
+        <div class="subExperience">
+            <div class="presentation floatLeft">
+                <img src="images/experience.jpg" alt="">
+                <div class="transparentBack">
+                    <div class="title">
+                        <div class="playIcon"><i class="fas fa-play"></i></div>
+                        <h4>Video Presentation</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="content floatLeft center">
+                <div class="contentText ">
+                    <h1>Experience</h1> <span>since 2006</span>
+                    <p>Our company has been the leading provider of advertising services to American companies since 2006. We pay attention to every aspect of our work.</p>
+                    <div>
+                        <a href="#" class="buttonView">GET A QUOTE</a>
+                        <span>or</span>
+                        <a href="#" class="buttonView">GET A BROCHURE</a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Company activity -->
+    <section id="activity">
+        <div class="parallax">
+            <img src="images/parallax.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Our Projects -->
+    <section id="projects">
+        
+    </section>
+
+    <!-- Why to choose us -->
+    <section id="priority">
+        
+    </section>
+
+    <!-- Our professionals -->
+    <section id="personal">
+        
+    </section>
+
+    <!-- Clients -->
+    <section id="clients">
+        
+    </section>
+
+    <!-- News -->
+    <section id="news">
+        
+    </section>
+
+    <!-- Company information -->
+    <section id="info">
+        
+    </section>
+
+    <footer>
+        
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+</body>
 </html>

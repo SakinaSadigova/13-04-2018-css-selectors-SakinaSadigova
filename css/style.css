@@ -1,42 +1,309 @@
-﻿body
-{
-    margin: 0;
-}
-/*.main ul {
-    padding: 0;
-    margin: 0;
-}
-.main ul li {
-    padding: 10px 20px;
-    border-bottom: 1px solid red;
-}*/
+body {
+  height: 80vh;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em; }
 
-    /*.main ul li:first-child, .main ul li:last-child {
-        background: cyan;
-    }*/
+header, section, footer {
+  /*box-sizing: border-box;*/
+  padding: 30px 0; }
 
-    /*.main ul li:nth-child(-2n+6) {
-        background: cyan;
-    }*/
-.register-form {
-    width: 600px;
-    margin: 0 auto;
-}
-input{
-    display: block;
-    margin: 10px;
+/*Common classes*/
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.normal {
+  width: 1200px;
+  margin: 0 auto; }
+
+.floatRight {
+  float: right; }
+
+.floatLeft {
+  float: left; }
+
+.displayInline {
+  display: inline-block; }
+
+.displayBlock {
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.buttonView {
+  padding: 14px 23px;
+  background: #FFC000;
+  font-weight: bold;
+  transition: all .5s ease;
+  text-decoration: none;
+  color: black;
+  font-size: 15px; }
+
+.buttonView a {
+  /*text-decoration: none;
+   color:black;
+   font-size: 15px;*/ }
+
+/*end of common classes*/
+header {
+  height: 107px; }
+
+header .normal {
+  height: 60px; }
+
+header .normal .logo {
+  /*height: 45px;*/
+  width: 166px; }
+
+header .normal .logo img {
+  width: 100%;
+  height: 100%; }
+
+header .normal .navbar {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+header .normal .buttonView:hover {
+  background: black;
+  color: white; }
+
+header .normal ul {
+  height: auto;
+  /*padding-top:20px;*/ }
+
+header .normal .button {
+  padding-top: 20px; }
+
+header .normal ul li {
+  display: inline-block;
+  padding: 14px 23px;
+  transition: all .2s  ease;
+  border: 2px solid transparent; }
+
+header .normal ul .selected {
+  background: #FFC000; }
+
+header .normal ul li:not(:first-child):hover {
+  border-color: #AAAAAA; }
+
+header .normal ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  font-size: 15px;
+  font-weight: bold; }
+
+header .normal ul li a .i {
+  color: #535353; }
+
+#slider {
+  /*min-height: 545px;*/
+  width: 100%;
+  background: url(..//images/slider.jpg) center center no-repeat;
+  background-size: cover;
+  height: inherit;
+  position: relative; }
+
+#slider::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2); }
+
+#slider .sliderTitle {
+  color: white;
+  position: absolute;
+  width: 510px;
+  margin-left: 15px; }
+
+#slider .sliderTitle h1 {
+  font-size: 70px;
+  font-weight: bold; }
+
+#slider .sliderTitle div {
+  height: 108px; }
+
+#slider .sliderTitle .line {
+  display: inline-block;
+  height: 6px;
+  width: 65px;
+  background: #FEBF00;
+  margin: 50px 10px 0; }
+
+#slider .sliderTitle h4 {
+  width: 83%;
+  font-size: 20px;
+  float: right; }
+
+#slider .swiper {
+  height: 100px;
+  width: 232px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 25px 0; }
+
+#slider .swiper .swiperNav {
+  height: 50px;
+  width: 100%;
+  text-align: center; }
+
+#slider .swiper div {
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: #151515;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#slider .swiperNav div {
+  font-size: 25px;
+  transition: 0.2s all ease; }
+
+#slider .swiperNav div:hover {
+  color: #FEBF00; }
+
+#slider .swiper .next {
+  border-left: 0.5px solid #EBEBEB; }
+
+#experience {
+  height: 650px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 0; }
+
+#experience .subExperience {
+  width: 100%;
+  height: auto; }
+
+#experience .subExperience > div {
+  width: 50%;
+  height: 450px;
+  position: relative; }
+
+#experience .subExperience .presentation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1.5s ease; }
+
+#experience .presentation {
+  overflow: hidden; }
+
+#experience .presentation:hover img {
+  transform: scale(1.1, 1.1); }
+
+#experience .transparentBack {
+  background: rgba(37, 41, 63, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#experience .title {
+  font-weight: bold;
+  font-size: 20px; }
+
+#experience .title .playIcon {
+  font-size: 30px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(162, 149, 132, 0.7);
+  border: 10px solid transparent;
+  transition: all 0.5s ease;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  /*box-sizing: border-box;*/ }
+
+#experience .title .playIcon:hover {
+  background: rgba(170, 166, 167, 0.8);
+  border: 10px solid #a29584; }
+
+#experience .content {
+  background: #F8F8F8; }
+
+#experience .content .contentText {
+  width: 70%; }
+
+#experience .content .contentText h1 {
+  font-size: 48px;
+  font-weight: bold;
+  display: inline; }
+
+#experience .content .contentText span {
+  color: #9b9b9b;
+  display: inline-block;
+  margin: 0 15px; }
+
+#experience .content .contentText p {
+  color: #9b9b9b; }
+
+#experience .content .contentText div {
+  margin-top: 40px; }
+
+#experience .content .contentText div a:first-child {
+  color: white;
+  background: black; }
+
+#experience .content .contentText div a:last-child {
+  background: #FFC000; }
+
+#experience .content .contentText div a:first-child:hover {
+  color: black;
+  background: #FFC000; }
+
+#experience .content .contentText div a:last-child:hover {
+  background: black;
+  color: white; }
+
+#activity {
+  height: 432px;
+  width: 100%;
+  position: relative;
+  background: green;
+  /*&:before{
+  	content:'';
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+  	bottom: 0;
+  	right: 0;
+  	background-color: rgba(0, 0, 0, 0.5);
+  	}*/ }
+  #activity .parallax {
+    margin: -30px 0;
+    padding: 30px 0;
+    height: 100%;
     width: 100%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-    input[name$="-button"] {
-        color: red;
-    }
-p {
-    height: 50px;
-    border: 1px solid green;
-    
-}
-p:empty {
-    background: yellow;
-}
+    background: red; }
+    #activity .parallax img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill; }
+
+/*# sourceMappingURL=style.css.map */
